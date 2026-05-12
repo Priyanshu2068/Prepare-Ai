@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.animate-rise {
+  animation: riseIn 700ms ease-out both;
+}
+
+.animate-rise-delayed {
+  animation: riseIn 850ms ease-out 120ms both;
+}
+
+.conic-stat {
+  background: conic-gradient(#34d399 0deg 295deg, #1f2937 295deg 360deg);
+}
+
+.light body {
+  background: #f8fafc;
+}
+
+.light .home-shell {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.light nav {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: #e5e7eb;
+  color: #0f172a;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
